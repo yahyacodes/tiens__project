@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Nunito:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Nunito", sans-serif;
+}
+
+.image {
+  margin-left: 1rem;
+  margin-top: 10px;
+  width: 80px;
+  height: auto;
+}
+
+.logoLabel {
+  display: flex;
+  margin-left: 6rem;
+  margin-top: -3rem;
+  font-size: 30px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.navbar ul {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: -4rem;
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.navbar ul li {
+  display: block;
+  margin: 1rem;
+}
+
+.navbar a:any-link {
+  text-decoration: none;
+  color: #333;
+}
+
+@media screen and (max-width: 900px) {
+  .navbar ul {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .navbar ul {
+    display: none;
+    flex-flow: column nowrap;
+    list-style-type: none;
+  }
+
+  .navbar ul li {
+    border-top: 1px solid #333;
+    padding: 0.5rem;
+  }
+
+  .navbar a {
+    display: block;
+    text-align: center;
+    width: 80%;
+  }
+
+  .image {
+    margin-left: auto;
+    margin-top: 10px;
+    width: 80px;
+    height: auto;
+  }
+
+  .logoLabel {
+    display: flex;
+    margin-left: auto;
+    margin-top: -3rem;
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+}
